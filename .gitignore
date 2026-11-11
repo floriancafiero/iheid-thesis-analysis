@@ -1,0 +1,6 @@
+data/
+*.zip
+*.jsonl
+*.csv
+*.json
+*.gz

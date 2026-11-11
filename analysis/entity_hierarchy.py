@@ -158,7 +158,7 @@ def main():
         for kind,entries in item.get("entities_by_type",{}).items():
             for raw,n in entries.items():
                 s=norm(raw);result=None
-                if s in O and (kind in {"ORG","MISC","EVENT"} or len(s)>=5):
+                if s in O and s not in {"who"} and (kind in {"ORG","MISC","EVENT"} or len(s)>=5):
                     result=("organization",O[s],"direct")
                 elif kind in {"LOC","GPE","MISC"}:
                     if s in C:result=("country",C[s],"direct")

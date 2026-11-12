@@ -1,73 +1,135 @@
-name: Wikidata - identifier les personnes NER
+name: Wikidata - toutes les personnes NER
 
 on:
   workflow_dispatch:
-    inputs:
-      start:
-        description: "Décalage de la première ligne (0, 100, 200...)"
-        required: true
-        type: number
-        default: 0
-      batch_size:
-        description: "Nombre de formes traitées dans ce lot (100 conseillé)"
-        required: true
-        type: number
-        default: 100
-      delay:
-        description: "Pause entre les requêtes Wikidata (secondes)"
-        required: true
-        type: string
-        default: "0.7"
 
 permissions:
   contents: read
+  actions: read
+
+# Prevent two exhaustive runs from overloading Wikidata simultaneously.
+concurrency:
+  group: wikidata-exhaustif-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
-  wikidata:
+  prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    outputs:
+      starts: ${{ steps.plan.outputs.starts }}
+      total: ${{ steps.plan.outputs.total }}
     steps:
-      - name: Récupérer le dépôt
-        uses: actions/checkout@v4
-      - name: Installer Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - name: Calculer les lots automatiquement depuis le corpus NER
+        id: plan
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import csv, json
+          with open('analysis/all_person_candidates.csv', encoding='utf-8-sig', newline='') as f:
+              total = sum(1 for _ in csv.DictReader(f))
+          size = 1000
+          starts = list(range(0, total, size))
+          if not (0 < len(starts) <= 256):
+              raise SystemExit(f'Too many matrix jobs: {len(starts)}')
+          print('starts=' + json.dumps(starts, separators=(',', ':')))
+          print(f'total={total}')
+          PY
+
+  wikidata:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        start: ${{ fromJSON(needs.prepare.outputs.starts) }}
+    name: Wikidata depuis la ligne ${{ matrix.start }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
         with:
-          python-version: "3.11"
-      - name: Installer requests
+          python-version: '3.11'
+      - name: Dépendances Python
         run: python -m pip install --disable-pip-version-check requests
-      - name: Résoudre les QID candidats, sans attribuer de sujets
+      - name: Résoudre toutes les personnes du lot (trois essais si nécessaire)
+        shell: bash
+        env:
+          BATCH_START: ${{ matrix.start }}
         run: |
           mkdir -p results/wikidata
-          python -u analysis/wikidata_batch_linker.py \
-            analysis/all_person_candidates.csv \
-            --start "${{ inputs.start }}" \
-            --batch-size "${{ inputs.batch_size }}" \
-            --delay "${{ inputs.delay }}" \
-            --out results/wikidata/candidate_qids.csv
+          for attempt in 1 2 3; do
+            echo "Tentative $attempt — lot ${{ matrix.start }}"
+            if python -u analysis/wikidata_batch_linker.py analysis/all_person_candidates.csv --start "${{ matrix.start }}" --batch-size 1000 --delay 0.7 --out results/wikidata/candidate_qids.csv; then
+              if python - <<'PY'
+          import csv, os
+          from collections import Counter
+          with open('results/wikidata/candidate_qids.csv', encoding='utf-8', newline='') as f:
+              rows = list(csv.DictReader(f))
+          with open('analysis/all_person_candidates.csv', encoding='utf-8-sig', newline='') as f:
+              total = sum(1 for _ in csv.DictReader(f))
+          start = int(os.environ['BATCH_START'])
+          expected = min(1000, total - start)
+          statuses = Counter(x['status'] for x in rows)
+          print(f'Lot {start}: {len(rows)}/{expected} noms; statuts {dict(statuses)}')
+          if len(rows) != expected or statuses.get('network_error', 0):
+              raise SystemExit(1)
+          PY
+              then
+                echo 'Lot entièrement résolu.'
+                break
+              fi
+            fi
+            if [[ "$attempt" == 3 ]]; then
+              echo 'Lot incomplet après trois essais ; résultats partiels conservés.'
+              exit 1
+            fi
+            sleep "$((10 * attempt))"
+          done
       - name: Filtrer les professions académiques et attribuer les pays
-        run: |
-          python -u analysis/filter_wikidata_people.py \
-            results/wikidata/candidate_qids.csv \
-            --delay "${{ inputs.delay }}" \
-            --out results/wikidata/person_country_links.csv
-      - name: Vérifier la sortie
+        run: python -u analysis/filter_wikidata_people.py results/wikidata/candidate_qids.csv --delay 0.7 --out results/wikidata/person_country_links.csv
+      - name: Vérifier les lignes de sortie après filtrage
         run: |
           python - <<'PY'
           import csv
-          from collections import Counter
-          with open('results/wikidata/candidate_qids.csv',encoding='utf8',newline='') as f:
-              rows=list(csv.DictReader(f))
-          counts=Counter(x['status'] for x in rows)
-          print("Résultats des candidats :",dict(counts))
-          if not rows or counts['network_error']==len(rows):
-              raise SystemExit("API Wikidata indisponible.")
-          print("Aucune personne n'est automatiquement considérée comme le sujet d'une thèse.")
+          def load(path):
+              with open(path, encoding='utf-8', newline='') as f:
+                  return list(csv.DictReader(f))
+          identities = load('results/wikidata/candidate_qids.csv')
+          screened = load('results/wikidata/person_country_links.csv')
+          assert len(screened) == len(identities)
+          assert {int(x['source_row']) for x in screened} == {int(x['source_row']) for x in identities}
+          print(f'Vérification OK : {len(screened)} lignes filtrées')
           PY
-      - name: Télécharger les résultats
+      - name: Archiver le lot même en cas d'échec
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
-          name: wikidata-personnes-${{ inputs.start }}-${{ inputs.batch_size }}
+          name: wikidata-shard-${{ matrix.start }}
           path: results/wikidata/
           if-no-files-found: warn
-          retention-days: 30
+          retention-days: 90
+
+  fusion:
+    needs: [prepare, wikidata]
+    if: ${{ needs.wikidata.result == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - name: Télécharger tous les lots Wikidata
+        uses: actions/download-artifact@v7
+        with:
+          pattern: wikidata-shard-*
+          path: results/wikidata/parts
+          merge-multiple: false
+      - name: Fusionner et contrôler la couverture des noms NER
+        run: python analysis/combine_wikidata_batches.py --source analysis/all_person_candidates.csv --folder results/wikidata/parts --out results/wikidata/final
+      - name: Publier le CSV final et le rapport de couverture
+        uses: actions/upload-artifact@v6
+        with:
+          name: wikidata-toutes-personnes-resultats
+          path: results/wikidata/final/
+          if-no-files-found: error
+          retention-days: 90

@@ -21,7 +21,7 @@
 ## Résultats exploratoires
 
 - 34 personnes, 8 205 occurrences reconnues, 181 thèses avec au moins une de ces personnes, 222 couples thèse/pays avec au moins une personne.
-- Sur 203 couples thèse/pays avec >=5 mentions de ces personnes, 180 (88,7 %) ont aussi >=5 mentions directes du pays.
+- Sur 203 couples thèse/juridiction avec >=5 mentions de ces personnes, 2 concernent la RDA sans mesure géographique directement comparable. Sur les **201 cas comparables**, 180 (**89,6 %**) ont aussi >=5 mentions directes du pays.
 - **51** couples thèse/pays comportent >=5 mentions cumulées réparties sur >=2 acteurs distincts : tous ont >=5 mentions géographiques directes (51/51). Ces chiffres dépendent du registre sélectionné et ne mesurent pas la précision d'un classifieur à grande échelle.
 - Sur les 21 couples personnes >=5 / pays <5, certaines thèses portent sur un espace tiers ou traitent un personnage extérieur : par ex. Lloyd George dans un travail sur le Kurdistan, Mao dans un travail sur Marx et Lénine. Dans d'autres cas, le signal complète effectivement le NER géographique : Patrice Lumumba dans *Les grandes puissances et le Congo*.
 

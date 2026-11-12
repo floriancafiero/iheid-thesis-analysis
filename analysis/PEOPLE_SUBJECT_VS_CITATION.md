@@ -1,0 +1,11 @@
+# Correction du protocole de Wikidata et de la pertinence thématique
+
+L'ancien plafond de 450 formes NER était un simple choix de charge API sur les formes les plus fréquentes après un filtre de graphie. Il ne correspondait pas aux 450 personnes les plus fréquemment étudiées. Parmi les premières formes figuraient des éditeurs et des fragments de bibliographies.
+
+Le nouvel inventaire traite les **36 669 graphies** NER PERSON/PER, dont **18 884** noms composés plausibles, **14 259** formes d'un seul token, **3 526** autres chaînes très incertaines. Le rang est une priorité de vérification, non un classement des sujets; la file complète est stockée dans `analysis/all_person_candidates.csv`. Les critères de tri tiennent compte de la présence dans un titre, de la concentration par thèse et des mentions cumulées.
+
+Le workflow GitHub prend un **décalage start** et un **nombre batch_size** : pas de limite scientifique à 450. Les recherches ne sélectionnent plus les seules personnes politiques. Toute personne humaine (`P31=Q5`), qu'elle soit chercheuse, artiste, diplomate, etc., peut être candidate. Occupations (`P106`), fonctions (`P39`) et nationalités (`P27`) sont conservées comme métadonnées, mais ne servent pas à éliminer des personnes étudiées, ni à attribuer automatiquement un pays.
+
+**Limite empirique déterminante :** le JSONL d'entités a des comptes par document, sans offsets ni délimitation des bibliographies. Il ne peut pas distinguer si un auteur apparaît seulement dans la bibliographie, sert de référence théorique, ou constitue le sujet de la thèse. Les mentions du titre sont un indice positif, pas une preuve universelle; une haute fréquence peut être une référence bibliographique répétée. Il faut revenir au texte OCR positionné, séparer corps, notes, bibliographie et titre/résumé, puis désambiguïser les mentions selon leur contexte. La nationalité ou le pays d'activité de la personne ne suffisent pas : Marx dans une thèse sur la pensée politique indienne ne fait pas de l'Allemagne le pays étudié.
+
+**Ne pas actualiser automatiquement les courbes des pays** à partir de ce fichier de QID. Ce sont des correspondances d'identité candidates et non des labels thématiques validés.

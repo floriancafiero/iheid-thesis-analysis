@@ -1,13 +1,5 @@
 #!/usr/bin/env python3
-"""Batch candidate Wikidata linking for PERSON/PER NER.
-
-Usage: python analysis/wikidata_batch_linker.py ranked_wikidata_candidates.csv \
-  --limit 450 --out wikidata_candidates.csv
-
-Requires requests and public Wikidata API network access. Search hits are
-CANDIDATES, not confirmed people or country assignments. Do not treat P27 or
-birthplace as a country studied. Caches every completed lookup to resume.
-"""
+"""Wikidata name-to-human candidate linker. No profession exclusions or automatic thesis subject assignments. The source NER lacks citation and bibliography positions."""
 import argparse, csv, json, re, time, unicodedata
 from pathlib import Path
 import requests
@@ -66,89 +58,67 @@ class Wikidata:
         return result
 
 def evaluate(wd,surface):
+    """QID identification only. Never infer studied subject or country."""
     found=wd.search(surface)
     data=wd.entities(found)
-    candidates=[]
-    roles=set()
+    people=[]
     for qid,entity in data.items():
-        claims=entity.get("claims",{})
-        if "Q5" not in qids(claims,"P31"):continue
-        positions=qids(claims,"P39")
-        if not positions:continue
-        candidates.append((qid,positions,qids(claims,"P27")))
-        roles.update(positions)
-    office_entities=wd.entities(sorted(roles))
-    answer=[]
-    for qid,positions,citizenship in candidates:
-        role_titles=[labels(office_entities.get(p,{})) for p in positions]
-        # Role filtering, not just politician occupation or country of citizenship.
-        # Only plausible public offices. Loose substrings like "king" once
-        # incorrectly accepted "Master of the King's Music" (Edward Elgar).
-        def political_office(title):
-            v=norm(title)
-            if not v: return False
-            excluded=("university","musical","music","olympic","sports",
-                      "european commission","european parliament",
-                      "united nations","international court",
-                      "company","corporation","association","academy",
-                      "football","church", "bishop", "archbishop")
-            if any(s in v for s in excluded): return False
-            patterns=(
-                r"^(prime minister|premier ministre)( of| du| de|$)",
-                r"^(president|president of the republic|president of)( of| du| de|$)",
-                r"^(chancellor|federal chancellor)( of|$)",
-                r"^(minister|minister of|minister for)( of| for| du| de|$)",
-                r"^(secretary of state|secretary general of the communist party)",
-                r"^(foreign secretary|defence secretary|defense secretary)",
-                r"^(ambassador|diplomat|senator|governor)( of| to|$)",
-                r"^(member of parliament|member of the national assembly|member of the senate)",
-                r"^(head of state|head of government|supreme leader)",
-                r"^(king|queen|emperor|sultan|monarch)( of|$)",
-                r"^(chairman|chairwoman|chairperson)( of the communist party| of the central committee)",
-            )
-            return any(re.search(p,v) for p in patterns)
-        positive=[r for r in role_titles if political_office(r)]
-        if not positive:continue
-        office_country_qids=sorted({c for pos in positions for c in qids(office_entities.get(pos,{}).get("claims",{}),"P17")})
-        answer.append(dict(qid=qid,role_titles="|".join(positive[:10]),
-                           office_country_qids="|".join(office_country_qids),
-                           citizenship_qids="|".join(citizenship)))
-    if len(answer)==1:
-        return {"status":"political_person_candidate",**answer[0],"all_exact_qids":"|".join(found)}
-    if len(answer)>1:
-        return {"status":"ambiguous_multiple_political_people","all_exact_qids":"|".join(a["qid"] for a in answer)}
-    return {"status":"no_unambiguous_political_office","all_exact_qids":"|".join(found)}
+        cs=entity.get("claims",{})
+        if "Q5" not in qids(cs,"P31"):continue
+        people.append(dict(qid=qid,person_label=labels(entity),
+            occupation_qids="|".join(qids(cs,"P106")),
+            position_qids="|".join(qids(cs,"P39")),
+            citizenship_qids="|".join(qids(cs,"P27"))))
+    if len(people)==1:
+        return {"status":"unique_human_name_candidate",**people[0],
+                "all_human_qids":people[0]["qid"]}
+    if len(people)>1:
+        return {"status":"ambiguous_multiple_human_qids",
+                "all_human_qids":"|".join(p["qid"] for p in people)}
+    return {"status":"no_exact_human_match","all_human_qids":""}
 
 def main():
-    a=argparse.ArgumentParser()
-    a.add_argument("candidates",type=Path)
-    a.add_argument("--limit",type=int,default=450)
-    a.add_argument("--out",type=Path,default=Path("wikidata_candidates.csv"))
-    a.add_argument("--delay",type=float,default=.35)
-    args=a.parse_args()
+    p=argparse.ArgumentParser()
+    p.add_argument("candidates",type=Path)
+    p.add_argument("--start",type=int,default=0,
+                   help="Zero-based row offset in entire inventory")
+    p.add_argument("--batch-size",type=int,default=100,
+                   help="Operational batch size, never a scientific cutoff")
+    p.add_argument("--out",type=Path,default=Path("wikidata_candidates.csv"))
+    p.add_argument("--delay",type=float,default=.7)
+    args=p.parse_args()
+    if args.start<0 or args.batch_size<1:raise ValueError("Invalid range")
     with args.candidates.open(encoding="utf-8-sig",newline="") as f:
-        candidates=list(csv.DictReader(f))[:args.limit]
-    fields=["surface","mentions","documents","status","qid","role_titles",
-            "office_country_qids","citizenship_qids","all_exact_qids","error"]
+        candidates=list(csv.DictReader(f))
+    selected=candidates[args.start:args.start+args.batch_size]
+    if not selected:raise ValueError(f"Empty batch at {args.start}; total {len(candidates)}")
+    args.out.parent.mkdir(parents=True,exist_ok=True)
+    fields=["source_row","surface","mentions","documents","queue","priority_score",
+            "title_doc_count","theses_with_5plus","max_mentions_in_one_thesis",
+            "status","qid","person_label","occupation_qids","position_qids",
+            "citizenship_qids","all_human_qids","error"]
     prior={}
     if args.out.exists():
         with args.out.open(encoding="utf8",newline="") as f:
-            prior={r["surface"]:r for r in csv.DictReader(f)}
+            prior={r["source_row"]:r for r in csv.DictReader(f)}
     wd=Wikidata(args.delay)
-    results=[]
-    for i,r in enumerate(candidates,1):
-        known=prior.get(r["surface"])
-        if known and known.get("status")!="network_error":
-            out=known
+    rows=[]
+    for offset,r in enumerate(selected,args.start):
+        key=str(offset)
+        if key in prior and prior[key].get("status")!="network_error":
+            output=prior[key]
         else:
             try:
-                out={**r,**evaluate(wd,r["surface"])}
-            except requests.RequestException as err:
-                out={**r,"status":"network_error","error":str(err)[:200]}
-        results.append(out)
-        if i%20==0:print(i,"/",len(candidates),out.get("status"),flush=True)
+                output={"source_row":key,**r,**evaluate(wd,r["surface"])}
+            except (requests.RequestException,ValueError,RuntimeError) as exc:
+                output={"source_row":key,**r,"status":"network_error","error":str(exc)[:200]}
+        rows.append(output)
+        if (offset-args.start+1)%20==0:
+            print(f"Rows {args.start}..{offset} / {len(candidates)} : {output.get('status')}",flush=True)
         with args.out.open("w",encoding="utf8",newline="") as f:
             writer=csv.DictWriter(f,fields,extrasaction="ignore")
-            writer.writeheader();writer.writerows(results)
-    print("Wrote",len(results),"rows. Candidate links must be resolved and geopolitical jurisdictions checked before aggregation.")
+            writer.writeheader();writer.writerows(rows)
+    print(f"{len(rows)} name candidates processed, offset {args.start}, total {len(candidates)}")
+    print("These are identity candidates ONLY; subject vs bibliography cannot be inferred from NER counts.")
+
 if __name__=="__main__":main()

@@ -9,7 +9,7 @@ This is a small positive-evidence pilot, not full automatic entity linking.
 import argparse,csv,zipfile,json,re,unicodedata
 from pathlib import Path
 from collections import Counter,defaultdict
-JURISDICTION={"France":"France","Royaume-Uni":"United Kingdom","États-Unis":"United States","Chine":"China","Inde":"India","Irak":"Iraq","Palestine":"Palestine","Iran":"Iran","Israël":"Israel","Bolivie":"Bolivia","Brésil":"Brazil","Ghana":"Ghana","RD Congo":"DR Congo","Ukraine":"Ukraine","Allemagne":"Germany","URSS":"Soviet Union","RDA":None}
+JURISDICTION={"France":"France","Royaume-Uni":"United Kingdom","États-Unis":"United States","Chine":"China","Inde":"India","Irak":"Iraq","Palestine":"Palestine","Iran":"Iran","Israël":"Israel","Bolivie":"Bolivia","Brésil":"Brazil","Ghana":"Ghana","RD Congo":"DR Congo","Ukraine":"Ukraine","Allemagne":"Germany","URSS":"Soviet Union","RDA":None,"Russie":"Russia","Cuba":"Cuba","Yougoslavie":None,"Turquie":"Turkey","Cambodge":"Cambodia","Afrique du Sud":"South Africa","Corée du Nord":"North Korea","Sénégal":"Senegal"}
 def norm(s):
  s=unicodedata.normalize("NFKD",s.lower().replace("’","'"))
  return " ".join(re.sub("[^a-z0-9]+"," ","".join(c for c in s if not unicodedata.combining(c))).split())

@@ -44,6 +44,12 @@ jobs:
             --batch-size "${{ inputs.batch_size }}" \
             --delay "${{ inputs.delay }}" \
             --out results/wikidata/candidate_qids.csv
+      - name: Filtrer les professions académiques et attribuer les pays
+        run: |
+          python -u analysis/filter_wikidata_people.py \
+            results/wikidata/candidate_qids.csv \
+            --delay "${{ inputs.delay }}" \
+            --out results/wikidata/person_country_links.csv
       - name: Vérifier la sortie
         run: |
           python - <<'PY'

@@ -109,6 +109,7 @@ jobs:
           name: wikidata-shard-${{ matrix.start }}
           path: results/wikidata/
           if-no-files-found: warn
+          overwrite: true
           retention-days: 90
 
   fusion:
@@ -132,4 +133,5 @@ jobs:
           name: wikidata-toutes-personnes-resultats
           path: results/wikidata/final/
           if-no-files-found: error
+          overwrite: true
           retention-days: 90

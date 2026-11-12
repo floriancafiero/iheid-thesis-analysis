@@ -82,13 +82,32 @@ def evaluate(wd,surface):
     for qid,positions,citizenship in candidates:
         role_titles=[labels(office_entities.get(p,{})) for p in positions]
         # Role filtering, not just politician occupation or country of citizenship.
-        positive=[r for r in role_titles if any(w in norm(r) for w in (
-            "minister","president","chancellor","ambassador","senator",
-            "parliament","premier","king","queen","secretary of state","head of state",
-            "head of government","governor","politician","commissar"))]
-        positive=[r for r in positive if not any(w in norm(r) for w in (
-            "university","european commission","european parliament",
-            "united nations","international court","olympic"))]
+        # Only plausible public offices. Loose substrings like "king" once
+        # incorrectly accepted "Master of the King's Music" (Edward Elgar).
+        def political_office(title):
+            v=norm(title)
+            if not v: return False
+            excluded=("university","musical","music","olympic","sports",
+                      "european commission","european parliament",
+                      "united nations","international court",
+                      "company","corporation","association","academy",
+                      "football","church", "bishop", "archbishop")
+            if any(s in v for s in excluded): return False
+            patterns=(
+                r"^(prime minister|premier ministre)( of| du| de|$)",
+                r"^(president|president of the republic|president of)( of| du| de|$)",
+                r"^(chancellor|federal chancellor)( of|$)",
+                r"^(minister|minister of|minister for)( of| for| du| de|$)",
+                r"^(secretary of state|secretary general of the communist party)",
+                r"^(foreign secretary|defence secretary|defense secretary)",
+                r"^(ambassador|diplomat|senator|governor)( of| to|$)",
+                r"^(member of parliament|member of the national assembly|member of the senate)",
+                r"^(head of state|head of government|supreme leader)",
+                r"^(king|queen|emperor|sultan|monarch)( of|$)",
+                r"^(chairman|chairwoman|chairperson)( of the communist party| of the central committee)",
+            )
+            return any(re.search(p,v) for p in patterns)
+        positive=[r for r in role_titles if political_office(r)]
         if not positive:continue
         office_country_qids=sorted({c for pos in positions for c in qids(office_entities.get(pos,{}).get("claims",{}),"P17")})
         answer.append(dict(qid=qid,role_titles="|".join(positive[:10]),

@@ -1,0 +1,345 @@
+{
+  "countries": {
+    "China": "chine|la chine|china|the china|republique populaire de chine|people’s republic of china|peoples republic of china|prc",
+    "Switzerland": "suisse|la suisse|switzerland|schweiz|svizzera",
+    "France": "france|la france",
+    "United States": "etats-unis|etats unis|les etats unis|the united states|united states|united states of america|usa|u.s.a.",
+    "United Kingdom": "royaume-uni|le royaume uni|united kingdom|the united kingdom|great britain|grande bretagne|grande-bretagne|britain",
+    "Germany": "allemagne|l allemagne|germany|deutschland|west germany|east germany|rfa|rda",
+    "Russia": "russie|la russie|russia|russian federation|federation de russie",
+    "Soviet Union": "urss|ussr|union sovietique|the soviet union|soviet union",
+    "India": "inde|l inde|india",
+    "Japan": "japon|japan",
+    "Brazil": "bresil|brazil|brasil",
+    "Italy": "italie|l italie|italy|italia",
+    "Canada": "canada",
+    "Iran": "iran",
+    "Israel": "israel",
+    "Turkey": "turquie|turkey|turkiye",
+    "Indonesia": "indonesie|indonesia",
+    "Mexico": "mexique|mexico",
+    "Egypt": "egypte|egypt",
+    "South Africa": "afrique du sud|south africa",
+    "Argentina": "argentine|argentina",
+    "Chile": "chili|chile",
+    "Colombia": "colombie|colombia",
+    "Peru": "perou|peru",
+    "Cuba": "cuba",
+    "Nicaragua": "nicaragua",
+    "Venezuela": "venezuela",
+    "Bolivia": "bolivie|bolivia",
+    "Ecuador": "equateur|ecuador",
+    "Spain": "espagne|spain|espana",
+    "Portugal": "portugal",
+    "Belgium": "belgique|belgium",
+    "Netherlands": "pays-bas|pays bas|netherlands|nederland",
+    "Sweden": "suede|sweden",
+    "Norway": "norvege|norway",
+    "Denmark": "danemark|denmark",
+    "Finland": "finlande|finland",
+    "Poland": "pologne|poland",
+    "Ukraine": "ukraine",
+    "Hungary": "hongrie|hungary",
+    "Greece": "grece|greece",
+    "Austria": "autriche|austria",
+    "Czechia": "republique tcheque|czech republic|czechia",
+    "Romania": "roumanie|romania",
+    "Yugoslavia": "yougoslavie|yugoslavia",
+    "Serbia": "serbie|serbia",
+    "Nigeria": "nigeria",
+    "Cameroon": "cameroun|cameroon",
+    "Senegal": "senegal",
+    "Mali": "mali",
+    "Burkina Faso": "burkina faso|upper volta|haute volta|haute-volta",
+    "Ghana": "ghana",
+    "Kenya": "kenya",
+    "Uganda": "ouganda|uganda",
+    "Ethiopia": "ethiopie|ethiopia",
+    "Tanzania": "tanzanie|tanzania",
+    "Rwanda": "rwanda",
+    "Burundi": "burundi",
+    "Côte d’Ivoire": "cote d ivoire|ivory coast",
+    "Morocco": "maroc|morocco",
+    "Algeria": "algerie|algeria",
+    "Tunisia": "tunisie|tunisia",
+    "Libya": "libye|libya",
+    "Sudan": "soudan|sudan",
+    "South Sudan": "soudan du sud|south sudan",
+    "Madagascar": "madagascar",
+    "DR Congo": "republique democratique du congo|democratic republic of the congo|rdc|drc|zaire",
+    "Republic of the Congo": "republique du congo|republic of the congo|congo brazzaville",
+    "Saudi Arabia": "arabie saoudite|saudi arabia",
+    "Iraq": "irak|iraq",
+    "Syria": "syrie|syria",
+    "Lebanon": "liban|lebanon",
+    "Jordan": "jordanie|jordan",
+    "Palestine": "palestine",
+    "Afghanistan": "afghanistan",
+    "Pakistan": "pakistan",
+    "Bangladesh": "bangladesh",
+    "Nepal": "nepal",
+    "Thailand": "thailande|thailand",
+    "Vietnam": "viet nam|vietnam",
+    "Cambodia": "cambodge|cambodia",
+    "Laos": "laos",
+    "Malaysia": "malaisie|malaysia",
+    "Singapore": "singapour|singapore",
+    "Philippines": "philippines",
+    "South Korea": "coree du sud|south korea|republic of korea",
+    "North Korea": "coree du nord|north korea|dprk",
+    "Australia": "australie|australia",
+    "New Zealand": "nouvelle zelande|new zealand"
+  },
+  "places": {
+    "China": "shanghai|beijing|pekin|peking|tianjin|shenzhen|guangzhou|canton|nanjing|nankin|chongqing|wuhan|chengdu|hangzhou|xi an|xian|shenyang|guangdong|sichuan|xinjiang|tibet",
+    "Switzerland": "vaud|canton de vaud|geneve|geneva|lausanne|zurich|zuerich|bern|berne|basel|bale|fribourg|neuchatel|valais|grisons|graubunden|ticino|tessin|lucerne|luzern|nyon|montreux",
+    "France": "paris|lyon|marseille|bordeaux|toulouse|lille|strasbourg|nantes|montpellier|grenoble|nice|rennes|bourgogne|normandie|bretagne|alsace|provence|ile de france",
+    "United States": "new york|washington dc|washington d c|los angeles|chicago|boston|san francisco|california|californie|texas|florida|floride|virginia|massachusetts|detroit|philadelphia|seattle|atlanta",
+    "United Kingdom": "london|londres|manchester|birmingham|liverpool|oxford|cambridge|edinburgh|edimbourg|glasgow|scotland|ecosse|wales|pays de galles|england|angleterre",
+    "Germany": "berlin|munich|muenchen|hamburg|frankfurt|francfort|bonn|cologne|koeln|bavaria|baviere|leipzig|dresden|stuttgart",
+    "Russia": "moscow|moscou|saint petersburg|saint petersbourg|st petersburg|siberia|siberie|vladivostok",
+    "India": "new delhi|delhi|mumbai|bombay|calcutta|kolkata|bangalore|bengaluru|chennai|madras|hyderabad|kerala|punjab indien",
+    "Japan": "tokyo|osaka|kyoto|hiroshima|nagoya|okinawa",
+    "Brazil": "rio de janeiro|sao paulo|brasilia|salvador de bahia|recife|fortaleza|manaus|bahia",
+    "Italy": "rome|roma|milan|milano|turin|torino|naples|napoli|florence|firenze|venice|venise|sicily|sicile",
+    "Belgium": "brussels|bruxelles|anvers|antwerp|liege|ghent|gand",
+    "Netherlands": "amsterdam|rotterdam|the hague|la haye|utrecht",
+    "Spain": "madrid|barcelona|barcelone|valencia|seville|sevilla|catalogne|catalonia|andalousie",
+    "Austria": "vienna|vienne|salzburg|salzbourg|graz",
+    "Turkey": "ankara|istanbul|izmir|constantinople",
+    "Egypt": "cairo|le caire|alexandria|alexandrie",
+    "Iran": "tehran|teheran|teheran|isfahan|ispahan",
+    "Iraq": "baghdad|bagdad|basra|bassora|mosul|mossoul",
+    "Lebanon": "beirut|beyrouth|tripoli liban",
+    "Israel": "tel aviv|haifa|hafai",
+    "Morocco": "rabat|casablanca|marrakech|fes|tanger",
+    "Algeria": "alger|algiers|oran|constantine algerie",
+    "Tunisia": "tunis|sfax|sousse",
+    "Senegal": "dakar|saint louis senegal|thies|casamance",
+    "Mali": "bamako|tombouctou|timbuktu|gao mali|mopti",
+    "Burkina Faso": "ouagadougou|bobo dioulasso|ouahigouya|yatenga|ganzourgou|kouritenga|oubritenga|bazega",
+    "Cameroon": "yaounde|douala|bafoussam|garoua",
+    "Kenya": "nairobi|mombasa",
+    "Nigeria": "lagos|abuja|kano|ibadan",
+    "South Africa": "johannesburg|cape town|le cap|pretoria|durban",
+    "DR Congo": "kinshasa|lubumbashi|goma|bukavu|kivu",
+    "Republic of the Congo": "brazzaville|pointe noire",
+    "Argentina": "buenos aires|cordoba argentina|rosario argentina",
+    "Mexico": "mexico city|ciudad de mexico|guadalajara|monterrey|chiapas|oaxaca",
+    "Colombia": "bogota|medellin|cali colombie",
+    "Chile": "santiago du chili|santiago de chile|valparaiso",
+    "Indonesia": "jakarta|bandung|surabaya|bali|java",
+    "Thailand": "bangkok|chiang mai",
+    "Vietnam": "hanoi|ho chi minh city|saigon|hue|da nang",
+    "South Korea": "seoul|busan|pusan",
+    "North Korea": "pyongyang",
+    "Australia": "sydney|melbourne|canberra|brisbane|perth australia",
+    "Canada": "ottawa|toronto|montreal|quebec|vancouver|ontario|alberta|manitoba"
+  },
+  "organizations": {
+    "SDN": {
+      "strong": [
+        "league of nations",
+        "the league of nations",
+        "societe des nations",
+        "la societe des nations",
+        "s d n",
+        "sdn",
+        "volkerbund",
+        "der volkerbund",
+        "des volkerbundes",
+        "volkerbundes",
+        "league of nation",
+        "society of nations"
+      ],
+      "broad": [
+        "lon",
+        "the lon",
+        "societe des nation",
+        "s d n",
+        "s d n.",
+        "league of nations organization"
+      ]
+    },
+    "ONU": {
+      "strong": [
+        "united nations",
+        "the united nations",
+        "nations unies",
+        "les nations unies",
+        "organisation des nations unies",
+        "organization of the united nations",
+        "organisation of the united nations",
+        "l organisation des nations unies",
+        "onu",
+        "l onu",
+        "un organisation"
+      ],
+      "broad": [
+        "un"
+      ]
+    },
+    "CEE/EEC": {
+      "strong": [
+        "cee",
+        "eec",
+        "communaute economique europeenne",
+        "la communaute economique europeenne",
+        "european economic community",
+        "the european economic community"
+      ],
+      "broad": [
+        "e e c"
+      ]
+    },
+    "CE/EC": {
+      "strong": [
+        "communaute europeenne",
+        "la communaute europeenne",
+        "european community",
+        "the european community",
+        "communautes europeennes",
+        "european communities",
+        "the european communities"
+      ],
+      "broad": [
+        "ec",
+        "the ec",
+        "ce",
+        "la ce"
+      ]
+    },
+    "UE/EU": {
+      "strong": [
+        "union europeenne",
+        "l union europeenne",
+        "the european union",
+        "european union",
+        "the eu",
+        "europaïsche union",
+        "europaische union",
+        "ue",
+        "l ue"
+      ],
+      "broad": [
+        "eu",
+        "the eu"
+      ]
+    },
+    "Banque mondiale": {
+      "strong": [
+        "world bank",
+        "the world bank",
+        "banque mondiale",
+        "la banque mondiale",
+        "banque internationale pour la reconstruction et le developpement",
+        "international bank for reconstruction and development",
+        "ibrd"
+      ],
+      "broad": [
+        "bm"
+      ]
+    },
+    "FMI": {
+      "strong": [
+        "fonds monetaire international",
+        "le fonds monetaire international",
+        "international monetary fund",
+        "the international monetary fund",
+        "fmi",
+        "imf"
+      ],
+      "broad": []
+    },
+    "GATT": {
+      "strong": [
+        "gatt",
+        "general agreement on tariffs and trade",
+        "accord general sur les tarifs douaniers et le commerce"
+      ],
+      "broad": []
+    },
+    "OMC": {
+      "strong": [
+        "omc",
+        "wto",
+        "world trade organization",
+        "world trade organisation",
+        "organisation mondiale du commerce",
+        "the world trade organization"
+      ],
+      "broad": []
+    },
+    "HCR": {
+      "strong": [
+        "unhcr",
+        "un hcr",
+        "hcr",
+        "united nations high commissioner for refugees",
+        "haut commissariat des nations unies pour les refugies",
+        "haut commissariat pour les refugies"
+      ],
+      "broad": []
+    },
+    "UNICEF": {
+      "strong": [
+        "unicef",
+        "fonds des nations unies pour l enfance",
+        "united nations children s fund"
+      ],
+      "broad": []
+    },
+    "OMS": {
+      "strong": [
+        "oms",
+        "who",
+        "world health organization",
+        "organisation mondiale de la sante"
+      ],
+      "broad": []
+    },
+    "OIT": {
+      "strong": [
+        "oit",
+        "ilo",
+        "international labour organization",
+        "international labour organisation",
+        "organisation internationale du travail",
+        "bureau international du travail"
+      ],
+      "broad": []
+    },
+    "HRW": {
+      "strong": [
+        "human rights watch",
+        "hrw"
+      ],
+      "broad": []
+    },
+    "WEF": {
+      "strong": [
+        "wef",
+        "world economic forum",
+        "forum economique mondial",
+        "the world economic forum"
+      ],
+      "broad": []
+    },
+    "OSCE": {
+      "strong": [
+        "osce",
+        "organization for security and co operation in europe",
+        "organisation pour la securite et la cooperation en europe"
+      ],
+      "broad": []
+    },
+    "CSCE": {
+      "strong": [
+        "csce",
+        "conference on security and cooperation in europe",
+        "conference sur la securite et la cooperation en europe"
+      ],
+      "broad": []
+    }
+  }
+}

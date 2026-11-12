@@ -1,0 +1,63 @@
+name: Wikidata - identifier les acteurs politiques
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Nombre de formes NER à rechercher (20 pour un essai ; 450 pour tout)"
+        required: true
+        type: number
+        default: 20
+      delay:
+        description: "Pause entre requêtes Wikidata, en secondes"
+        required: true
+        type: string
+        default: "0.7"
+
+permissions:
+  contents: read
+
+jobs:
+  wikidata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Installer requests
+        run: python -m pip install --disable-pip-version-check requests
+      - name: Interroger l'API Wikidata
+        run: |
+          mkdir -p results/wikidata
+          python -u analysis/wikidata_batch_linker.py \
+            analysis/ranked_wikidata_candidates.csv \
+            --limit "${{ inputs.limit }}" \
+            --delay "${{ inputs.delay }}" \
+            --out results/wikidata/candidate_offices.csv
+      - name: Vérifier les résultats
+        run: |
+          python - <<'PY'
+          import csv
+          from collections import Counter
+          path='results/wikidata/candidate_offices.csv'
+          with open(path,encoding='utf-8',newline='') as f:
+              rows=list(csv.DictReader(f))
+          counts=Counter(r['status'] for r in rows)
+          print("Formes traitées :",len(rows))
+          print("Statuts :", dict(counts))
+          print("ATTENTION : correspondances candidates, à vérifier avant toute attribution géographique.")
+          if not rows or counts['network_error'] == len(rows):
+              raise SystemExit("Échec des appels API : voir les erreurs du CSV.")
+          PY
+      - name: Télécharger les résultats
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wikidata-resultats-${{ inputs.limit }}
+          path: results/wikidata/
+          if-no-files-found: warn
+          retention-days: 30

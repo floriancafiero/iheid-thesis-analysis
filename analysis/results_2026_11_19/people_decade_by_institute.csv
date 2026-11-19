@@ -1,0 +1,193 @@
+institution,decade,n_theses,name,qid,country,curated_5_n,curated_5_pct
+HEI,1920,2,David Lloyd George,Q134982,United Kingdom,1,50.0
+HEI,1930,41,David Lloyd George,Q134982,United Kingdom,1,2.44
+HEI,1930,41,Woodrow Wilson,Q34296,United States,1,2.44
+HEI,1930,41,Cordell Hull,Q202979,United States,1,2.44
+HEI,1940,24,Winston Churchill,Q8016,United Kingdom,1,4.17
+HEI,1940,24,Woodrow Wilson,Q34296,United States,3,12.5
+HEI,1950,50,David Lloyd George,Q134982,United Kingdom,3,6.0
+HEI,1950,50,Winston Churchill,Q8016,United Kingdom,2,4.0
+HEI,1950,50,Ernest Bevin,Q332365,United Kingdom,2,4.0
+HEI,1950,50,Adolf Hitler,Q352,Germany,1,2.0
+HEI,1950,50,Woodrow Wilson,Q34296,United States,1,2.0
+HEI,1950,50,Mustafa Kemal Atatürk,Q5152,Turkey,1,2.0
+HEI,1950,50,Cordell Hull,Q202979,United States,3,6.0
+HEI,1960,76,Charles de Gaulle,Q2042,France,4,5.26
+HEI,1960,76,Ernest Bevin,Q332365,United Kingdom,1,1.32
+HEI,1960,76,Mao Zedong,Q5816,China,1,1.32
+HEI,1960,76,Fidel Castro,Q11256,Cuba,1,1.32
+HEI,1960,76,Léon Blum,Q18434,France,1,1.32
+HEI,1960,76,Konrad Adenauer,Q2492,Germany,1,1.32
+HEI,1960,76,Cordell Hull,Q202979,United States,3,3.95
+HEI,1970,104,Charles de Gaulle,Q2042,France,3,2.88
+HEI,1970,104,David Lloyd George,Q134982,United Kingdom,1,0.96
+HEI,1970,104,Winston Churchill,Q8016,United Kingdom,1,0.96
+HEI,1970,104,Ernest Bevin,Q332365,United Kingdom,1,0.96
+HEI,1970,104,Mao Zedong,Q5816,China,3,2.88
+HEI,1970,104,Jawaharlal Nehru,Q1047,India,1,0.96
+HEI,1970,104,David Ben-Gurion,Q37610,Israel,1,0.96
+HEI,1970,104,Getúlio Vargas,Q156844,Brazil,1,0.96
+HEI,1970,104,Kwame Nkrumah,Q8620,Ghana,1,0.96
+HEI,1970,104,Adolf Hitler,Q352,Germany,1,0.96
+HEI,1970,104,Fidel Castro,Q11256,Cuba,1,0.96
+HEI,1970,104,Léon Blum,Q18434,France,3,2.88
+HEI,1970,104,Harry S. Truman,Q11613,United States,1,0.96
+HEI,1980,147,Charles de Gaulle,Q2042,France,1,0.68
+HEI,1980,147,David Lloyd George,Q134982,United Kingdom,1,0.68
+HEI,1980,147,Ronald Reagan,Q9960,United States,1,0.68
+HEI,1980,147,Jimmy Carter,Q23685,United States,2,1.36
+HEI,1980,147,Henry Kissinger,Q66107,United States,2,1.36
+HEI,1980,147,Deng Xiaoping,Q16977,China,2,1.36
+HEI,1980,147,Mao Zedong,Q5816,China,1,0.68
+HEI,1980,147,Zhou Enlai,Q17410,China,1,0.68
+HEI,1980,147,David Ben-Gurion,Q37610,Israel,2,1.36
+HEI,1980,147,Getúlio Vargas,Q156844,Brazil,1,0.68
+HEI,1980,147,Kwame Nkrumah,Q8620,Ghana,1,0.68
+HEI,1980,147,Patrice Lumumba,Q161672,DR Congo,2,1.36
+HEI,1980,147,Walter Ulbricht,Q2628,East Germany,1,0.68
+HEI,1980,147,Fidel Castro,Q11256,Cuba,2,1.36
+HEI,1980,147,Woodrow Wilson,Q34296,United States,2,1.36
+HEI,1980,147,Helmut Schmidt,Q2516,Germany,1,0.68
+HEI,1980,147,Konrad Adenauer,Q2492,Germany,1,0.68
+HEI,1980,147,Cordell Hull,Q202979,United States,2,1.36
+HEI,1980,147,Franklin D. Roosevelt,Q8007,United States,1,0.68
+HEI,1990,143,Charles de Gaulle,Q2042,France,2,1.4
+HEI,1990,143,François Mitterrand,Q2038,France,2,1.4
+HEI,1990,143,Valéry Giscard d’Estaing,Q2124,France,1,0.7
+HEI,1990,143,Jacques Chirac,Q2105,France,1,0.7
+HEI,1990,143,David Lloyd George,Q134982,United Kingdom,2,1.4
+HEI,1990,143,Ronald Reagan,Q9960,United States,3,2.1
+HEI,1990,143,Jimmy Carter,Q23685,United States,3,2.1
+HEI,1990,143,Henry Kissinger,Q66107,United States,4,2.8
+HEI,1990,143,Deng Xiaoping,Q16977,China,5,3.5
+HEI,1990,143,Mao Zedong,Q5816,China,4,2.8
+HEI,1990,143,Jiang Zemin,Q16597,China,3,2.1
+HEI,1990,143,Hu Yaobang,Q99850,China,3,2.1
+HEI,1990,143,Zhou Enlai,Q17410,China,2,1.4
+HEI,1990,143,Indira Gandhi,Q1149,India,2,1.4
+HEI,1990,143,Saddam Hussein,Q1316,Iraq,1,0.7
+HEI,1990,143,Yasser Arafat,Q34211,Palestine,3,2.1
+HEI,1990,143,Ruhollah Khomeini,Q38823,Iran,1,0.7
+HEI,1990,143,David Ben-Gurion,Q37610,Israel,1,0.7
+HEI,1990,143,Helmut Kohl,Q2518,Germany,1,0.7
+HEI,1990,143,Fidel Castro,Q11256,Cuba,1,0.7
+HEI,1990,143,Woodrow Wilson,Q34296,United States,4,2.8
+HEI,1990,143,Léon Blum,Q18434,France,1,0.7
+HEI,1990,143,Helmut Schmidt,Q2516,Germany,1,0.7
+HEI,1990,143,Konrad Adenauer,Q2492,Germany,1,0.7
+HEI,1990,143,Slobodan Milošević,Q47139,Yugoslavia,1,0.7
+HEI,1990,143,Mustafa Kemal Atatürk,Q5152,Turkey,1,0.7
+HEI,1990,143,Richard Nixon,Q9588,United States,1,0.7
+HEI,1990,143,Mikhail Gorbachev,Q30487,Soviet Union,2,1.4
+HEI,1990,143,John F. Kennedy,Q9696,United States,1,0.7
+HEI,1990,143,Franklin D. Roosevelt,Q8007,United States,1,0.7
+HEI,1990,143,Abdou Diouf,Q219728,Senegal,1,0.7
+HEI,2000,155,Charles de Gaulle,Q2042,France,5,3.23
+HEI,2000,155,François Mitterrand,Q2038,France,2,1.29
+HEI,2000,155,Valéry Giscard d’Estaing,Q2124,France,1,0.65
+HEI,2000,155,Jacques Chirac,Q2105,France,1,0.65
+HEI,2000,155,David Lloyd George,Q134982,United Kingdom,2,1.29
+HEI,2000,155,Margaret Thatcher,Q7416,United Kingdom,4,2.58
+HEI,2000,155,Ronald Reagan,Q9960,United States,2,1.29
+HEI,2000,155,Jimmy Carter,Q23685,United States,1,0.65
+HEI,2000,155,Deng Xiaoping,Q16977,China,2,1.29
+HEI,2000,155,Mao Zedong,Q5816,China,2,1.29
+HEI,2000,155,Jiang Zemin,Q16597,China,2,1.29
+HEI,2000,155,Zhu Rongji,Q18285,China,1,0.65
+HEI,2000,155,Zhou Enlai,Q17410,China,1,0.65
+HEI,2000,155,Saddam Hussein,Q1316,Iraq,4,2.58
+HEI,2000,155,Yasser Arafat,Q34211,Palestine,2,1.29
+HEI,2000,155,Walter Ulbricht,Q2628,East Germany,1,0.65
+HEI,2000,155,Helmut Kohl,Q2518,Germany,2,1.29
+HEI,2000,155,Nikita Khrushchev,Q35314,Soviet Union,1,0.65
+HEI,2000,155,Adolf Hitler,Q352,Germany,1,0.65
+HEI,2000,155,Woodrow Wilson,Q34296,United States,1,0.65
+HEI,2000,155,Willy Brandt,Q2514,Germany,2,1.29
+HEI,2000,155,Konrad Adenauer,Q2492,Germany,2,1.29
+HEI,2000,155,Slobodan Milošević,Q47139,Yugoslavia,2,1.29
+HEI,2000,155,Hun Sen,Q57788,Cambodia,1,0.65
+HEI,2000,155,Yitzhak Rabin,Q34060,Israel,1,0.65
+HEI,2000,155,Mikhail Gorbachev,Q30487,Soviet Union,1,0.65
+HEI,2000,155,Vladimir Putin,Q7747,Russie,1,0.65
+IHEID,2000,73,Charles de Gaulle,Q2042,France,4,5.48
+IHEID,2000,73,François Mitterrand,Q2038,France,2,2.74
+IHEID,2000,73,Jacques Chirac,Q2105,France,1,1.37
+IHEID,2000,73,Jean-Marie Le Pen,Q7177,France,1,1.37
+IHEID,2000,73,Tony Blair,Q9545,United Kingdom,1,1.37
+IHEID,2000,73,Ronald Reagan,Q9960,United States,4,5.48
+IHEID,2000,73,Jimmy Carter,Q23685,United States,2,2.74
+IHEID,2000,73,Henry Kissinger,Q66107,United States,1,1.37
+IHEID,2000,73,Deng Xiaoping,Q16977,China,3,4.11
+IHEID,2000,73,Mao Zedong,Q5816,China,1,1.37
+IHEID,2000,73,Jiang Zemin,Q16597,China,1,1.37
+IHEID,2000,73,Zhu Rongji,Q18285,China,1,1.37
+IHEID,2000,73,Indira Gandhi,Q1149,India,2,2.74
+IHEID,2000,73,Jawaharlal Nehru,Q1047,India,2,2.74
+IHEID,2000,73,Saddam Hussein,Q1316,Iraq,4,5.48
+IHEID,2000,73,Yasser Arafat,Q34211,Palestine,2,2.74
+IHEID,2000,73,Ruhollah Khomeini,Q38823,Iran,2,2.74
+IHEID,2000,73,David Ben-Gurion,Q37610,Israel,2,2.74
+IHEID,2000,73,Evo Morales,Q42410,Bolivia,2,2.74
+IHEID,2000,73,Leonid Kuchma,Q629702,Ukraine,1,1.37
+IHEID,2000,73,Slobodan Milošević,Q47139,Yugoslavia,2,2.74
+IHEID,2000,73,George W. Bush,Q207,United States,1,1.37
+IHEID,2000,73,Abdou Diouf,Q219728,Senegal,1,1.37
+IHEID,2010,483,Charles de Gaulle,Q2042,France,7,1.45
+IHEID,2010,483,François Mitterrand,Q2038,France,1,0.21
+IHEID,2010,483,Valéry Giscard d’Estaing,Q2124,France,3,0.62
+IHEID,2010,483,Jacques Chirac,Q2105,France,4,0.83
+IHEID,2010,483,David Lloyd George,Q134982,United Kingdom,1,0.21
+IHEID,2010,483,Winston Churchill,Q8016,United Kingdom,1,0.21
+IHEID,2010,483,Tony Blair,Q9545,United Kingdom,2,0.41
+IHEID,2010,483,Ernest Bevin,Q332365,United Kingdom,1,0.21
+IHEID,2010,483,Ronald Reagan,Q9960,United States,5,1.04
+IHEID,2010,483,Jimmy Carter,Q23685,United States,4,0.83
+IHEID,2010,483,Henry Kissinger,Q66107,United States,5,1.04
+IHEID,2010,483,Deng Xiaoping,Q16977,China,2,0.41
+IHEID,2010,483,Hu Yaobang,Q99850,China,1,0.21
+IHEID,2010,483,Zhou Enlai,Q17410,China,1,0.21
+IHEID,2010,483,Jawaharlal Nehru,Q1047,India,1,0.21
+IHEID,2010,483,Saddam Hussein,Q1316,Iraq,5,1.04
+IHEID,2010,483,David Ben-Gurion,Q37610,Israel,3,0.62
+IHEID,2010,483,Evo Morales,Q42410,Bolivia,3,0.62
+IHEID,2010,483,Kwame Nkrumah,Q8620,Ghana,2,0.41
+IHEID,2010,483,Leonid Kuchma,Q629702,Ukraine,2,0.41
+IHEID,2010,483,Woodrow Wilson,Q34296,United States,3,0.62
+IHEID,2010,483,Willy Brandt,Q2514,Germany,1,0.21
+IHEID,2010,483,Helmut Schmidt,Q2516,Germany,2,0.41
+IHEID,2010,483,Slobodan Milošević,Q47139,Yugoslavia,1,0.21
+IHEID,2010,483,Mustafa Kemal Atatürk,Q5152,Turkey,1,0.21
+IHEID,2010,483,Cordell Hull,Q202979,United States,1,0.21
+IHEID,2010,483,Hun Sen,Q57788,Cambodia,1,0.21
+IHEID,2010,483,Richard Nixon,Q9588,United States,6,1.24
+IHEID,2010,483,Angela Merkel,Q567,Germany,1,0.21
+IHEID,2010,483,Barack Obama,Q76,United States,1,0.21
+IHEID,2010,483,Vladimir Putin,Q7747,Russie,6,1.24
+IHEID,2010,483,George W. Bush,Q207,United States,2,0.41
+IHEID,2010,483,Harry S. Truman,Q11613,United States,1,0.21
+IHEID,2010,483,John F. Kennedy,Q9696,United States,2,0.41
+IHEID,2010,483,Franklin D. Roosevelt,Q8007,United States,1,0.21
+IHEID,2010,483,Abdou Diouf,Q219728,Senegal,2,0.41
+IHEID,2020,300,Jean-Marie Le Pen,Q7177,France,1,0.33
+IHEID,2020,300,David Lloyd George,Q134982,United Kingdom,1,0.33
+IHEID,2020,300,Winston Churchill,Q8016,United Kingdom,1,0.33
+IHEID,2020,300,Margaret Thatcher,Q7416,United Kingdom,1,0.33
+IHEID,2020,300,Ronald Reagan,Q9960,United States,2,0.67
+IHEID,2020,300,Jimmy Carter,Q23685,United States,1,0.33
+IHEID,2020,300,Henry Kissinger,Q66107,United States,2,0.67
+IHEID,2020,300,Deng Xiaoping,Q16977,China,1,0.33
+IHEID,2020,300,Zhu Rongji,Q18285,China,1,0.33
+IHEID,2020,300,Indira Gandhi,Q1149,India,1,0.33
+IHEID,2020,300,Jawaharlal Nehru,Q1047,India,2,0.67
+IHEID,2020,300,Evo Morales,Q42410,Bolivia,1,0.33
+IHEID,2020,300,Getúlio Vargas,Q156844,Brazil,1,0.33
+IHEID,2020,300,Kwame Nkrumah,Q8620,Ghana,1,0.33
+IHEID,2020,300,Woodrow Wilson,Q34296,United States,2,0.67
+IHEID,2020,300,Helmut Schmidt,Q2516,Germany,1,0.33
+IHEID,2020,300,Mustafa Kemal Atatürk,Q5152,Turkey,2,0.67
+IHEID,2020,300,Angela Merkel,Q567,Germany,1,0.33
+IHEID,2020,300,Harry S. Truman,Q11613,United States,1,0.33
+IHEID,2020,300,Franklin D. Roosevelt,Q8007,United States,1,0.33
+IUED,2000,21,Deng Xiaoping,Q16977,China,1,4.76
+IUED,2000,21,Mao Zedong,Q5816,China,1,4.76
+IUED,2000,21,Vladimir Putin,Q7747,Russie,1,4.76

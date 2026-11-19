@@ -1,0 +1,158 @@
+institution,year,title,doc_a,doc_b,words_a,words_b,word_ratio,source_overlap,classification,keep,remove
+HEI,1966,The 'anciens combattants' and French foreign policy,HEI_000545--000004_411209,HEI_002159_AU2AC01233,147853,330771,0.447,0,unresolved_title_collision,,
+HEI,1973,Les investissements privés à long terme du Canada à l'étranger de 1946 à 1966,HEI_000556--000006_410301,HEI_000556--000005_410301,30461,113997,0.26721,0,unresolved_title_collision,,
+HEI,1980,L'évolution en Suisse de la conception de la coopération au développement,HEI_000574--000001_411209,HEI_000574--000002_411209,82601,103860,0.79531,0,unresolved_title_collision,,
+HEI,1998,L'Organisation de libération de la Palestine dans les relations arabes et internationales,HEI_000653--000001_411209,HEI_000653--000002_411209,194867,274140,0.71083,0,unresolved_title_collision,,
+IHEID,2008,Sovereign debt dynamics in a stochastic environment,IHEID_000368--000011_410206,1590,25226,25154,0.99715,1,strong_probable_duplicate,1590,IHEID_000368--000011_410206
+IHEID,2008,Three essays in monetary policy,IHEID_000368--000010_410206,1592,44166,44127,0.99912,1,strong_probable_duplicate,1592,IHEID_000368--000010_410206
+IHEID,2009,Usages de l'Internet dans les cybercafés de Bamako,IHEID_000070--000001--000002_410301,1702,126957,99417,0.78308,1,unresolved_title_collision,,
+IHEID,2008,Immunités et violations graves des droits humains,IHEID_000368--000009_410206,1588,98423,98350,0.99926,1,strong_probable_duplicate,1588,IHEID_000368--000009_410206
+IHEID,2008,A new institutional economics guide to the making of markets,IHEID_000694--000002_410206,1616,85440,85656,0.99748,1,strong_probable_duplicate,1616,IHEID_000694--000002_410206
+IHEID,2008,China and the World Trade Organization,IHEID_000694--000004_410301,1600,148022,147975,0.99968,1,strong_probable_duplicate,1600,IHEID_000694--000004_410301
+IHEID,2008,The principle of common but differentiated responsibilites and the climate change regime,IHEID_000694--000001_410206,1598,226516,226447,0.9997,1,strong_probable_duplicate,1598,IHEID_000694--000001_410206
+IHEID,2008,Justice in the distribution of the world's resources,IHEID_000695--000002_411209,1602,118237,117151,0.99082,1,unresolved_title_collision,,
+IHEID,2008,Aux origines de la nouvelle guerre froide culturelle,IHEID_000694--000003_410301,1596,259310,247257,0.95352,1,unresolved_title_collision,,
+IHEID,2008,Images of law and reality in the work of Hans J. Morgenthau,IHEID_000696--000003_410206,1606,73566,73546,0.99973,1,strong_probable_duplicate,1606,IHEID_000696--000003_410206
+IHEID,2008,Essays in law and economics,IHEID_000696--000002_410206,1612,84450,84440,0.99988,1,strong_probable_duplicate,1612,IHEID_000696--000002_410206
+IHEID,2008,"""National interests"" and European integration",IHEID_000696--000001_411209,1610,163447,163317,0.9992,1,strong_probable_duplicate,1610,IHEID_000696--000001_411209
+IHEID,2008,The use of systematic sexual violence (SSV) against women in ethnonationalist war,IHEID_000696--000004_410206,1618,136793,135967,0.99396,1,unresolved_title_collision,,
+IHEID,2008,Crossing the normative chasm,IHEID_000697--000001_410206,1614,91062,90797,0.99709,1,strong_probable_duplicate,1614,IHEID_000697--000001_410206
+IHEID,2008,Stability tests for panels,IHEID_000697--000004_410301,1624,33115,33120,0.99985,1,strong_probable_duplicate,1624,IHEID_000697--000004_410301
+IHEID,2008,"Les ""Français d'abord""",IHEID_000697--000002_410301,1628,164206,164023,0.99889,1,strong_probable_duplicate,1628,IHEID_000697--000002_410301
+IHEID,2008,International trade in water rights,IHEID_000697--000005_410301,1626,93834,93787,0.9995,1,strong_probable_duplicate,1626,IHEID_000697--000005_410301
+IHEID,2008,Production sharing and economic integration,IHEID_000698--000002_411209,1632,46387,46344,0.99907,1,strong_probable_duplicate,1632,IHEID_000698--000002_411209
+IHEID,2008,Which museum for what China ?,IHEID_000698--000001_411209,1638,109795,109747,0.99956,1,strong_probable_duplicate,1638,IHEID_000698--000001_411209
+IHEID,2008,Entre les mailles du filet ?,IHEID_000695--000001_411209,1608,454580,278441,0.61252,1,unresolved_title_collision,,
+IHEID,2009,New facts of international trade and firm location with firm heterogeneity,IHEID_000699--000003_411209,1650,28841,28835,0.99979,1,strong_probable_duplicate,1650,IHEID_000699--000003_411209
+IHEID,2008,Beating a retreat,IHEID_000697--000003_410301,1622,236286,161641,0.68409,1,unresolved_title_collision,,
+IHEID,2009,Foreign policy and the private sector in Brazil,IHEID_000700--000001_410301,1656,61153,61124,0.99953,1,strong_probable_duplicate,1656,IHEID_000700--000001_410301
+IHEID,2009,"Gender, participatory governance and politics",IHEID_000698--000004_411209,1660,187383,187362,0.99989,1,strong_probable_duplicate,1660,IHEID_000698--000004_411209
+IHEID,2008,Le statut de l'eau en temps de conflit armé,IHEID_000699--000001_411209,1636,201221,201057,0.99918,1,strong_probable_duplicate,1636,IHEID_000699--000001_411209
+IHEID,2009,Presumed outcomes and missing links,IHEID_000700--000003_410301,1664,66041,65480,0.99151,1,unresolved_title_collision,,
+IHEID,2008,Explosive remnants of war and the protection of human beings under public international law,IHEID_000699--000002_411209,1642,229789,226555,0.98593,1,unresolved_title_collision,,
+IHEID,2009,The international legal protection of the Amazon,IHEID_000700--000002_410301,1654,141237,141280,0.9997,1,strong_probable_duplicate,1654,IHEID_000700--000002_410301
+IHEID,2008,Iranian political elite and Israel,IHEID_000699--000004_410301,1640,242800,209056,0.86102,1,unresolved_title_collision,,
+IHEID,2008,Crime international,IHEID_000698--000003_411209,1634,404120,288862,0.71479,1,unresolved_title_collision,,
+IHEID,2009,Droit à l'alimentation et accès à la justice,IHEID_000700--000004_411209,1652,177734,177396,0.9981,1,strong_probable_duplicate,1652,IHEID_000700--000004_411209
+IHEID,2009,"Dispositifs locaux de régulation, conflits fonciers et logiques d'acteurs dans le cadre d'un projet d'aménagement et de gestion des ressources (Centre-Nord du Burkina Faso)",IHEID_000701--000001_411209,1658,137432,137326,0.99923,1,strong_probable_duplicate,1658,IHEID_000701--000001_411209
+IHEID,2009,Three essays using disaggregated data of international trade,IHEID_000702--000002_410206,1672,27183,27126,0.9979,1,strong_probable_duplicate,1672,IHEID_000702--000002_410206
+IHEID,2009,Les interventions de développement et leur logique normalisatrice,IHEID_000700--000005_411209,1644,186646,186286,0.99807,1,strong_probable_duplicate,1644,IHEID_000700--000005_411209
+IHEID,2009,Polyphonie sur l'identité européenne,IHEID_000701--000002_410301,1662,155100,155025,0.99952,1,strong_probable_duplicate,1662,IHEID_000701--000002_410301
+IHEID,2009,The effects of financial globalization on macroeconomic policy outcomes,IHEID_000702--000004_411209,1678,66393,66366,0.99959,1,strong_probable_duplicate,1678,IHEID_000702--000004_411209
+IHEID,2009,¿Que se vayan todos ?,IHEID_000702--000003_411209,1674,70849,70821,0.9996,1,strong_probable_duplicate,1674,IHEID_000702--000003_411209
+IHEID,2009,Three essays in international trade and the location of production,IHEID_000702--000005_411209,1688,51388,51166,0.99568,1,strong_probable_duplicate,1688,IHEID_000702--000005_411209
+IHEID,2009,Les armées sur le front intérieur,IHEID_000701--000004_410206,1668,187898,187855,0.99977,1,strong_probable_duplicate,1668,IHEID_000701--000004_410206
+IHEID,2009,Liminality in international relations,IHEID_000702--000001_410206,1670,188640,188512,0.99932,1,strong_probable_duplicate,1670,IHEID_000702--000001_410206
+IHEID,2009,Means of transportation registered by international organizations,IHEID_000701--000003_410206,1666,270027,220259,0.81569,1,unresolved_title_collision,,
+IHEID,2009,The backstabber forgiven ?,IHEID_000703--000001_411209,1684,167496,167505,0.99995,1,strong_probable_duplicate,1684,IHEID_000703--000001_411209
+IHEID,2009,The Allies and the Italian Social Republic,IHEID_000703--000002_410206,1680,147556,147548,0.99995,1,strong_probable_duplicate,1680,IHEID_000703--000002_410206
+IHEID,2009,Scientific reasoning and public deliberation at the WTO,IHEID_000703--000005_410206,1692,61029,60994,0.99943,1,strong_probable_duplicate,1692,IHEID_000703--000005_410206
+IHEID,2009,Les trajectoires de la corruption bureaucratique au Sénégal,IHEID_000703--000004_410206,1686,114964,114929,0.9997,1,strong_probable_duplicate,1686,IHEID_000703--000004_410206
+IHEID,2009,Three essays on the consequences of offshore outsourcing,IHEID_000704--000004_410301,1694,35556,35543,0.99963,1,strong_probable_duplicate,1694,IHEID_000704--000004_410301
+IHEID,2009,Formes d'intégration de l'économie dans les démocraties de marché,IHEID_000702--000006_411209,1676,239580,210614,0.8791,1,unresolved_title_collision,,
+IHEID,2009,The single European currency,IHEID_000705--000004_410301,1704,49899,49856,0.99914,1,strong_probable_duplicate,1704,IHEID_000705--000004_410301
+IHEID,2009,A human rights perspective for farmers' rights within the World Trade Organization,IHEID_000704--000003_410301,1696,130981,130843,0.99895,1,strong_probable_duplicate,1696,IHEID_000704--000003_410301
+IHEID,2010,"Three essays on financial crises, recovery and reform",IHEID_000706--000001_411209,1734,35528,35563,0.99902,1,strong_probable_duplicate,1734,IHEID_000706--000001_411209
+IHEID,2009,To what extent can intellectual property law effectively protect and preserve traditional knowledge/traditional cultural expressions (folklore),IHEID_000705--000003_410301,1698,131223,131192,0.99976,1,strong_probable_duplicate,1698,IHEID_000705--000003_410301
+IHEID,2009,Three essays on monetary policy and financial markets,IHEID_000706--000002_411209,1714,33769,33728,0.99879,1,strong_probable_duplicate,1714,IHEID_000706--000002_411209
+IHEID,2009,Contemporary international community,IHEID_000703--000003_410206,1682,304737,304486,0.99918,1,strong_probable_duplicate,1682,IHEID_000703--000003_410206
+IHEID,2009,Le nationalisme et l'exil,IHEID_000704--000001_410301,1700,218947,218651,0.99865,1,strong_probable_duplicate,1700,IHEID_000704--000001_410301
+IHEID,2009,De la licéité du recours à la force armée dans le contexte de la lutte contre le terrorisme international,IHEID_000704--000002_410301,1690,252796,245219,0.97003,1,unresolved_title_collision,,
+IHEID,2010,International copyright regulation and access to education in developing countries,IHEID_000707--000002_410301,1710,119252,119064,0.99842,1,strong_probable_duplicate,1710,IHEID_000707--000002_410301
+IHEID,2010,L'émergence du Tadjikistan sur la scène internationale,IHEID_000707--000001_410301,1726,160550,160437,0.9993,1,strong_probable_duplicate,1726,IHEID_000707--000001_410301
+IHEID,2010,Status and rights of NGOs in international humanitarian law,IHEID_000706--000004_410301,1706,176898,176718,0.99898,1,strong_probable_duplicate,1706,IHEID_000706--000004_410301
+IHEID,2010,Risk analysis under multilateral institutions,IHEID_000706--000005_410301,1722,185388,185221,0.9991,1,strong_probable_duplicate,1722,IHEID_000706--000005_410301
+IHEID,2009,La diaspora et l'Etat-nation sur la scène internationale,IHEID_000706--000003_411209,1718,242042,237001,0.97917,1,unresolved_title_collision,,
+IHEID,2010,La régulation sociale des risques de catastrophe,IHEID_000705--000005_411209,1720,330257,172366,0.52191,1,unresolved_title_collision,,
+IHEID,2010,Aux frontières des ordres institutionnels territoriaux,IHEID_000707--000003_411209,1758,167785,167642,0.99915,1,strong_probable_duplicate,1758,IHEID_000707--000003_411209
+IHEID,2010,Le discours interprétatif en droit international,IHEID_000708--000006_410301,1742,92187,92105,0.99911,1,strong_probable_duplicate,1742,IHEID_000708--000006_410301
+IHEID,2010,Nuclearization and its discontents,IHEID_000709--000001_410301,1738,111771,111741,0.99973,1,strong_probable_duplicate,1738,IHEID_000709--000001_410301
+IHEID,2010,La participation effective des communautés minoritaires à la conduite des affaires publiques,IHEID_000707--000004_411209,1708,217116,216983,0.99939,1,strong_probable_duplicate,1708,IHEID_000707--000004_411209
+IHEID,2010,Challengers without responsibility ?,IHEID_000707--000005_411209,1712,209879,209709,0.99919,1,strong_probable_duplicate,1712,IHEID_000707--000005_411209
+IHEID,2010,"Droits et obligations des états côtiers, des états tiers et des organisations internationales compétentes en matière de navigation et d'exploitation des ressources naturelles en mer",IHEID_000709--000004_410301,1730,97466,97266,0.99795,1,strong_probable_duplicate,1730,IHEID_000709--000004_410301
+IHEID,2010,Contemporary Chinese migration to Western continental Europe,IHEID_000710--000005_411209,1744,61142,61012,0.99787,1,strong_probable_duplicate,1744,IHEID_000710--000005_411209
+IHEID,2010,"Same myth, different celebration ?",IHEID_000710--000003_411209,1746,110811,110733,0.9993,1,strong_probable_duplicate,1746,IHEID_000710--000003_411209
+IHEID,2011,La réalisation dans le temps de l'illicite international et ses conséquences dans le droit de la responsabilité internationale,IHEID_000710--000002_411209,1798,156572,156353,0.9986,1,strong_probable_duplicate,1798,IHEID_000710--000002_411209
+IHEID,2010,Access and participation in criminal procedures for victims of gross human rights violations,IHEID_000710--000006_411209,1732,158689,158534,0.99902,1,strong_probable_duplicate,1732,IHEID_000710--000006_411209
+IHEID,2010,Promotion des petites entreprises de transformation agroalimentaire au Burkina Faso et au Ghana,IHEID_000711--000002_411209,1756,143860,143708,0.99894,1,strong_probable_duplicate,1756,IHEID_000711--000002_411209
+IHEID,2010,Insecurity communities,IHEID_000711--000001_411209,1748,182528,182349,0.99902,1,strong_probable_duplicate,1748,IHEID_000711--000001_411209
+IHEID,2010,L'unification du droit des affaires de l'OHADA,IHEID_000711--000005_411209,1764,130382,130248,0.99897,1,strong_probable_duplicate,1764,IHEID_000711--000005_411209
+IHEID,2010,Essays in competition policy and trade,IHEID_000712--000003_410301,1778,52552,52528,0.99954,1,strong_probable_duplicate,1778,IHEID_000712--000003_410301
+IHEID,2010,Le droit international économique et les droits sociaux fondamentaux,IHEID_000709--000003_410301,1728,371805,242550,0.65236,1,unresolved_title_collision,,
+IHEID,2010,"Building a state, dispossessing the nation",IHEID_000712--000001_411209,1766,150231,150151,0.99947,1,strong_probable_duplicate,1766,IHEID_000712--000001_411209
+IHEID,2010,Labor and product market frictions and the business cycle,IHEID_000713--000004_411209,1788,52207,52113,0.9982,1,strong_probable_duplicate,1788,IHEID_000713--000004_411209
+IHEID,2010,Three essays on the economics of international trade law,IHEID_000712--000007_410301,1776,86295,86225,0.99919,1,strong_probable_duplicate,1776,IHEID_000712--000007_410301
+IHEID,2010,L'administration Reagan au Chili (1981-1989),IHEID_000712--000004_411209,1774,125305,125257,0.99962,1,strong_probable_duplicate,1774,IHEID_000712--000004_411209
+IHEID,2010,Governance reform in Africa,IHEID_000712--000006_411209,1772,128363,128155,0.99838,1,strong_probable_duplicate,1772,IHEID_000712--000006_411209
+IHEID,2011,Le concept de troisième force en Grande-Bretagne au lendemain de la Deuxième guerre mondiale,IHEID_000713--000005_411209,12224,149304,149003,0.99798,1,strong_probable_duplicate,12224,IHEID_000713--000005_411209
+IHEID,2010,Les finalités de l'occupation militaire,IHEID_000715--000002_410206,1796,127448,127391,0.99955,1,strong_probable_duplicate,1796,IHEID_000715--000002_410206
+IHEID,2011,L'intérêt culturel internationalement protégé,IHEID_000714--000005_410301,1790,154855,154628,0.99853,1,strong_probable_duplicate,1790,IHEID_000714--000005_410301
+IHEID,2010,The limits of intervention,IHEID_000713--000006_410301,1792,203356,203040,0.99845,1,strong_probable_duplicate,1792,IHEID_000713--000006_410301
+IHEID,2011,The notion of international legal order,IHEID_000715--000001_410206,12220,146583,145785,0.99456,1,unresolved_title_collision,,
+IHEID,2011,Derussification or Ukrainization ?,IHEID_000714--000002_410301,1800,205241,195600,0.95303,1,unresolved_title_collision,,
+IHEID,2010,Les contours de l'expropriation indirecte en droit international des investissements,IHEID_000715--000003_410206,1806,205318,201183,0.97986,1,unresolved_title_collision,,
+IHEID,2011,Culture after conflict,IHEID_000716--000001_410206,1820,146240,146171,0.99953,1,strong_probable_duplicate,1820,IHEID_000716--000001_410206
+IHEID,2011,L'interdiction de la discrimination fondée sur la nationalité en droit international des droits de la personne,IHEID_000716--000002_410206,1810,179629,179580,0.99973,1,strong_probable_duplicate,1810,IHEID_000716--000002_410206
+IHEID,2011,Les relations entre Téhéran et Moscou depuis 1979,IHEID_000716--000003_411209,12228,164296,164198,0.9994,1,strong_probable_duplicate,12228,IHEID_000716--000003_411209
+IHEID,2011,Post-conflict peace-building,IHEID_000716--000004_411209,1804,171288,171296,0.99995,1,strong_probable_duplicate,1804,IHEID_000716--000004_411209
+IHEID,2010,Three essays on trade and mode of supply,IHEID_000717--000004_411209,1812,38027,37983,0.99884,1,strong_probable_duplicate,1812,IHEID_000717--000004_411209
+IHEID,2011,When the dog does not bark,IHEID_000717--000002_411209,1822,134783,134755,0.99979,1,strong_probable_duplicate,1822,IHEID_000717--000002_411209
+IHEID,2011,The extraterritorial application of selected human rights treaties,IHEID_000717--000003_411209,1816,165766,165631,0.99919,1,strong_probable_duplicate,1816,IHEID_000717--000003_411209
+IHEID,2011,Protection de la santé et droit international économique,IHEID_000715--000004_410206,1814,386955,275390,0.71168,1,unresolved_title_collision,,
+IHEID,2011,The international legal framework against corruption,IHEID_000718--000001_411209,12234,178960,178930,0.99983,1,strong_probable_duplicate,12234,IHEID_000718--000001_411209
+IHEID,2011,Incorporation of treaties into other treaties,IHEID_000718--000003_410206,12232,166469,166182,0.99828,1,strong_probable_duplicate,12232,IHEID_000718--000003_410206
+IHEID,2011,The idea of Europe in classical Weimar,IHEID_000717--000001_411209,1824,269302,226982,0.84285,1,unresolved_title_collision,,
+IHEID,2011,Components of the Iranian foreign policy,IHEID_000718--000004_410206,12226,148316,148016,0.99798,1,strong_probable_duplicate,12226,IHEID_000718--000004_410206
+IHEID,2011,La diligence en droit international,IHEID_000719--000001_410206,12222,162435,162361,0.99954,1,strong_probable_duplicate,12222,IHEID_000719--000001_410206
+IHEID,2011,The domestic sources of European foreign policy,IHEID_000720--000004_410206,12254,88600,88521,0.99911,1,strong_probable_duplicate,12254,IHEID_000720--000004_410206
+IHEID,2011,The law of nations in early American foreign policy,IHEID_000720--000001_410301,12258,162228,162224,0.99998,1,strong_probable_duplicate,12258,IHEID_000720--000001_410301
+IHEID,2011,Three essays in international and domestic aspects of financial integration,IHEID_000721--000007_410206,288009,52758,52706,0.99901,1,strong_probable_duplicate,288009,IHEID_000721--000007_410206
+IHEID,2011,Democracy in international law and its critics,IHEID_000720--000003_410206,12264,206913,206886,0.99987,1,strong_probable_duplicate,12264,IHEID_000720--000003_410206
+IHEID,2011,"Post-conflict elections, sustainable peace and the construction of domestic political order",IHEID_000721--000002_410206,12278,123689,123630,0.99952,1,strong_probable_duplicate,12278,IHEID_000721--000002_410206
+IHEID,2011,Droits de l'homme et immunités des organisations internationales,IHEID_000719--000002_410301,12230,260907,222383,0.85235,1,unresolved_title_collision,,
+IHEID,2011,"Fragmentation, pluralism and judicial interpretation in public international law",IHEID_000721--000006_410206,12288,131933,131840,0.9993,1,strong_probable_duplicate,12288,IHEID_000721--000006_410206
+IHEID,2011,Cosmologie et ordre de la nature,IHEID_000721--000008_411209,15647,122246,121794,0.9963,1,strong_probable_duplicate,15647,IHEID_000721--000008_411209
+IHEID,2012,"Au-delà du Bosphore, l'Europe ?",IHEID_000724--000001_411209,12403,73168,73129,0.99947,1,strong_probable_duplicate,12403,IHEID_000724--000001_411209
+IHEID,2011,Captured in war,IHEID_000720--000002_410301,12260,347421,247034,0.71105,1,unresolved_title_collision,,
+IHEID,2011,Qu'est-ce que c'est un conflit religieux ?,IHEID_000722--000002_411209,12308,182255,182233,0.99988,1,strong_probable_duplicate,12308,IHEID_000722--000002_411209
+IHEID,2012,"Exit, voice and adjustment",IHEID_000724--000005_411209,12405,181985,181846,0.99924,1,strong_probable_duplicate,12405,IHEID_000724--000005_411209
+IHEID,2012,Sentimental states,IHEID_000723--000005_411209,12947,214644,204897,0.95459,1,unresolved_title_collision,,
+IHEID,2012,Les activités de change dans les rues de Kinshasa,IHEID_000727--000001_410301,14560,154580,154481,0.99936,1,strong_probable_duplicate,14560,IHEID_000727--000001_410301
+IHEID,2012,Delegation to independent regulatory agencies,IHEID_000725--000003_411209,12461,223320,222096,0.99452,1,unresolved_title_collision,,
+IHEID,2012,"The role of complicity in international responsibility, with special attention to state responsibility",IHEID_000727--000002_410301,12638,109584,109529,0.9995,1,strong_probable_duplicate,12638,IHEID_000727--000002_410301
+IHEID,2012,Legal resolution of serious nuclear non-proliferation disputes,IHEID_000726--000004_411209,12591,209722,204452,0.97487,1,unresolved_title_collision,,
+IHEID,2012,The relationship between the International Criminal Court and the Security Council of the United Nations,IHEID_000728--000001_410301,12874,199491,199426,0.99967,1,strong_probable_duplicate,12874,IHEID_000728--000001_410301
+IHEID,2012,The principle of special and differential treatment for developing states in international law,IHEID_000728--000002_410301,12913,182008,181748,0.99857,1,strong_probable_duplicate,12913,IHEID_000728--000002_410301
+IHEID,2012,L'Africanisation et l'appropriation africaine des opérations de paix,IHEID_000729--000004_410301,13658,218991,211697,0.96669,1,unresolved_title_collision,,
+IHEID,2013,Campaigning for universal norms,IHEID_000733--000003_410301,15591,93458,93408,0.99947,1,strong_probable_duplicate,15591,IHEID_000733--000003_410301
+IHEID,2013,Italian relations with the People's Republic of China during the Cold War,IHEID_000733--000004_411209,15440,90080,90001,0.99912,1,strong_probable_duplicate,15440,IHEID_000733--000004_411209
+IHEID,2012,'OTAN de l'énergie' vs 'Club de l'énergie de l'OCS',IHEID_000730--000001_410301,14604,260697,221990,0.85152,1,unresolved_title_collision,,
+IHEID,2013,Disaster induced business vulnerability,IHEID_000736--000002_411209,279339,108681,108643,0.99965,1,strong_probable_duplicate,279339,IHEID_000736--000002_411209
+IHEID,2013,Defendants' rights and victims' interests in international criminal proceedings,IHEID_000920--000005_410206,279351,81208,81200,0.9999,1,strong_probable_duplicate,279351,IHEID_000920--000005_410206
+IHEID,2012,The paradigm of State consent in the law of treaties,IHEID_000730--000002_410301,14610,347141,309962,0.8929,1,unresolved_title_collision,,
+IHEID,2013,Nomine ecclesiastiche e l'atteggiamento del clero come oggetto delle relazioni tra la Santa Sede e il regno d'Italia sotto il pontificato di Pio XI (1922-1939),IHEID_000923--000004_410206,279354,108606,159012,0.68301,1,unresolved_title_collision,,
+IHEID,2012,Le concept d'indérogeabilité en droit international,IHEID_000732--000001_410301,15335,409781,273598,0.66767,1,unresolved_title_collision,,
+IHEID,2013,Resilient communities,IHEID_000923--000002_410206,279350,145627,145574,0.99964,1,strong_probable_duplicate,279350,IHEID_000923--000002_410206
+IHEID,2013,The permeability of the sources of international law to power,IHEID_000923--000006_410206,279358,150219,150128,0.99939,1,strong_probable_duplicate,279358,IHEID_000923--000006_410206
+IHEID,2013,The principle of universal jurisdiction,IHEID_000934--000007_410206,282488,120548,120302,0.99796,1,strong_probable_duplicate,282488,IHEID_000934--000007_410206
+IHEID,2013,Indeterminate legal terms and the balancing of values in international economic law,IHEID_000930--000006_410301,282480,148586,148502,0.99943,1,strong_probable_duplicate,282480,IHEID_000930--000006_410301
+IHEID,2013,Specific characteristics and challenges of refugee and asylum-seeker protection in Sub-Saharan Africa,IHEID_000736--000001_411209,16525,403489,280652,0.69556,1,unresolved_title_collision,,
+IHEID,2013,Culture and international trade law,IHEID_000935--000002_410301,282487,144013,143724,0.99799,1,strong_probable_duplicate,282487,IHEID_000935--000002_410301
+IHEID,2017,International currency use and macroeconomic effects of trade integration,IHEID_002265--000006_411209,295009,70741,95901,0.73765,1,unresolved_title_collision,,
+IHEID,2016,La nouvelle définition du crime d'agression dans le Statut de Rome,IHEID_002220--000001_411209,293983,156065,111186,0.71243,1,unresolved_title_collision,,
+IHEID,2017,Harnessing the ring of fire,IHEID_002281--000006_411209,295282,107390,107224,0.99845,1,strong_probable_duplicate,295282,IHEID_002281--000006_411209
+IHEID,2015,"Israel between France and the United States, 1962-1968",IHEID_002436--000004_410301,292220,83559,258505,0.32324,1,unresolved_title_collision,,
+IHEID,2014,Legitimacy-seeking and rule-making in the voluntary carbon market,IHEID_002355--000004_410301,290302,88970,155938,0.57055,1,unresolved_title_collision,,
+IHEID,2016,Essays in environmental economics,IHEID_002485--000005_410301,293779,40753,83545,0.4878,1,unresolved_title_collision,,
+IHEID,2015,"Internationalization, domestic politics and the ""Myth of Liberalization""",IHEID_002437--000002_410301,292223,111274,70700,0.63537,1,unresolved_title_collision,,
+IHEID,2015,Ecole et politiques territoriales au Burkina Faso,IHEID_002481--000005_410301,293372,95899,88925,0.92728,1,unresolved_title_collision,,
+IHEID,2016,When states use lethal force against their own citizens,IHEID_002227--000002_411209,294031,258610,179308,0.69335,1,unresolved_title_collision,,
+IHEID,2018,Essays in economics,IHEID_002537--000005_410206,296520,48425,48353,0.99851,1,strong_probable_duplicate,296520,IHEID_002537--000005_410206
+IHEID,2018,Acquisition of territory by force in contemporary international law,IHEID_002519--000005_410206,295827,108767,108734,0.9997,1,strong_probable_duplicate,295827,IHEID_002519--000005_410206
+IHEID,2018,Guarantees of non-repetition for violation of human rights,IHEID_002537--000004_410206,296055,103253,103157,0.99907,1,strong_probable_duplicate,296055,IHEID_002537--000004_410206
+IHEID,2015,Breaking the walls down,IHEID_002481--000001_410301,293378,200998,107224,0.53346,1,unresolved_title_collision,,
+IHEID,2022,World Bank and China for 40 years,IHEID_003180--000002_410206,301365,79627,79592,0.99956,1,strong_probable_duplicate,301365,IHEID_003180--000002_410206
+IHEID,2020,Democratic possibilities,IHEID_002944--000007_410206,298496,105898,105877,0.9998,1,strong_probable_duplicate,298496,IHEID_002944--000007_410206
+IHEID,2018,Three essays in development economics,295651,296558,53199,36270,0.68178,0,unresolved_title_collision,,
+IHEID,2022,Three essays in development economics,300054,300246,57259,51544,0.90019,0,unresolved_title_collision,,
+IHEID,2026,Three essays in development economics,322018,322028,59758,33826,0.56605,0,unresolved_title_collision,,

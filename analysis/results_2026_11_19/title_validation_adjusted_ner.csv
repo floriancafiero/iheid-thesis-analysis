@@ -1,0 +1,10 @@
+entity_type,entity,n_2010,n_2020_2026,observed_pct_2010,observed_pct_2020_2026,observed_delta_pp,gcomp_adjusted_pct_2010,gcomp_adjusted_pct_2020_2026,adjusted_delta_pp,cohort_odds_ratio,odds_ratio_ci_low,odds_ratio_ci_high,exploratory_p
+country,United States,483,300,53.0,45.33,-7.67,53.0,48.88,-4.12,0.838,0.618,1.136,0.2557
+country,France,483,300,37.68,29.67,-8.01,37.68,34.22,-3.46,0.851,0.612,1.183,0.3358
+country,China,483,300,20.91,23.0,2.09,20.91,20.47,-0.44,0.973,0.677,1.398,0.8802
+country,India,483,300,21.95,21.67,-0.28,21.95,20.17,-1.78,0.894,0.622,1.287,0.5471
+country,Germany,483,300,25.26,17.0,-8.26,25.26,17.29,-7.97,0.605,0.411,0.891,0.011
+organization,ONU,483,300,33.13,22.67,-10.46,33.13,30.3,-2.82,0.856,0.596,1.229,0.3996
+organization,Construction européenne (strictement CEE→CE→UE),483,300,13.04,6.67,-6.38,13.04,7.4,-5.64,0.52,0.299,0.904,0.0205
+organization,OMC,483,300,12.63,9.67,-2.96,12.63,9.45,-3.18,0.721,0.445,1.169,0.1844
+organization,Banque mondiale,483,300,23.6,16.0,-7.6,23.6,15.25,-8.35,0.58,0.398,0.844,0.0044

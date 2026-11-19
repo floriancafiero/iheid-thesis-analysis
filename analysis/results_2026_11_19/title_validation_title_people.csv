@@ -1,0 +1,6 @@
+doc_id,year,institution,title,raw_surface,wikidata_label,qid,mentions,screen_status,country_if_screened,status
+HEI_000538--000002_410206,1959,HEI,Frédéric Bastiat and the free trade movement in France and England,frédéric bastiat,Frédéric Bastiat,Q13515,27,excluded_academic,,positive_title_mention_candidate_QID_requires_manual_identity_check
+HEI_000617--000001_410206,1989,HEI,Franklin D. Roosevelt,franklin d. roosevelt,Franklin Delano Roosevelt,Q8007,41,excluded_academic,,positive_title_mention_candidate_QID_requires_manual_identity_check
+HEI_000628--000001_410301,1992,HEI,Arthur Koestler,arthur koestler | arthur koestler”,Arthur Koestler,Q78494,49,excluded_academic,,positive_title_mention_candidate_QID_requires_manual_identity_check
+HEI_000668--000003_410301,2002,HEI,Les relations franco-québécoises de De Gaulle à François Mitterrand,françois mitterrand,François Mitterrand,Q2038,34,excluded_academic,,positive_title_mention_candidate_QID_requires_manual_identity_check
+1606,2008,IHEID,Images of law and reality in the work of Hans J. Morgenthau,hans j. morgenthau,Hans Morgenthau,Q77161,7,excluded_academic,,positive_title_mention_candidate_QID_requires_manual_identity_check
